@@ -7,9 +7,9 @@ const downloadButton = document.querySelector('button#download');
 const recordedVideo = document.querySelector('video#recorded');
 const uploadVideo = document.querySelector('button#upload');
 const myPeer = new Peer(undefined, {
-  host: 'peerjs-server.herokuapp.com',
-  secure: true,
-  port: 433,
+  path: '/peerjs',
+  host: '/',
+  port: '443',
   config: {'iceServers': [
     { url: 'stun:stun.l.google.com:19302' },
     {
