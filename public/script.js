@@ -7,7 +7,7 @@ const downloadButton = document.querySelector('button#download');
 const recordedVideo = document.querySelector('video#recorded');
 const uploadVideo = document.querySelector('button#upload');
 const myPeer = new Peer(undefined, {
-  path: '/peerjs',
+  path: '/node_modules',
   host: '/',
   port: '443',
   config: {'iceServers': [
