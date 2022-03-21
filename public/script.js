@@ -7,32 +7,9 @@ const downloadButton = document.querySelector('button#download');
 const recordedVideo = document.querySelector('video#recorded');
 const uploadVideo = document.querySelector('button#upload');
 const myPeer = new Peer(undefined, {
-  path: '/node_modules',
+  path: '/',
   host: '/',
-  port: '443',
-  config: {'iceServers': [
-    { url: 'stun:stun.l.google.com:19302' },
-    {
-      urls: "stun:openrelay.metered.ca:80"
-    },
-    {
-      urls: "turn:openrelay.metered.ca:80",
-      username: "openrelayproject",
-      credential: "openrelayproject"
-    },
-    {
-      urls: "turn:openrelay.metered.ca:443",
-      username: "openrelayproject",
-      credential: "openrelayproject"
-    },
-    {
-      urls: "turn:openrelay.metered.ca:443?transport=tcp",
-      username: "openrelayproject",
-      credential: "openrelayproject"
-    },
-    { url: 'turn:homeo@turn.bistri.com:80', credential: 'homeo' }
-
-  ]} /* Sample servers, please use appropriate ones */
+  port: '443'
 })
 var  chunks=[] ;
 const myVideo = document.createElement('video')
