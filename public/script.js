@@ -7,8 +7,7 @@ const downloadButton = document.querySelector('button#download');
 const recordedVideo = document.querySelector('video#recorded');
 const uploadVideo = document.querySelector('button#upload');
 const myPeer = new Peer(undefined, {
-  host: '/',
-  port: process.env.PORT,
+  host: 'https://webrtc-v2.herokuapp.com/',
   config: {'iceServers': [
     { url: 'stun:stun.l.google.com:19302' },
     {
