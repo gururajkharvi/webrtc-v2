@@ -8,7 +8,6 @@ const recordedVideo = document.querySelector('video#recorded');
 const uploadVideo = document.querySelector('button#upload');
 const myPeer = new Peer(undefined, {
   host: '/',
-  port: '3001',
   config: {'iceServers': [
     { url: 'stun:stun.l.google.com:19302' },
     {
