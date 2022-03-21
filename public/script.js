@@ -9,6 +9,7 @@ const uploadVideo = document.querySelector('button#upload');
 const myPeer = new Peer(undefined, {
   host: '/',
   path: '/peerjs',
+  secure: true,
   port: 9000,
   config: {'iceServers': [
     { url: 'stun:stun.l.google.com:19302' },
