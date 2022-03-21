@@ -9,7 +9,6 @@ const uploadVideo = document.querySelector('button#upload');
 const myPeer = new Peer(undefined, {
   host: 'https://webrtc-v2.herokuapp.com',
   secure: true,
-  port: 443,
   config: {'iceServers': [
     { url: 'stun:stun.l.google.com:19302' },
     {
